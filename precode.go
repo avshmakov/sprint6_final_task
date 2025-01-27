@@ -111,7 +111,7 @@ func delTask(w http.ResponseWriter, r *http.Request) {
 
 	_, ok := tasks[id]
 	if !ok {
-		http.Error(w, "Задание не найдено", http.StatusNoContent)
+		http.Error(w, "Задание не найдено", http.StatusBadRequest)
 		return
 	}
 	delete(tasks, id)
