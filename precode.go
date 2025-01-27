@@ -106,7 +106,7 @@ func getTask(w http.ResponseWriter, r *http.Request) {
 
 // **************************************************************************
 func delTask(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("delete")
+	//fmt.Println("delete")
 	id := chi.URLParam(r, "id")
 
 	_, ok := tasks[id]
